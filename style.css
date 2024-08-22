@@ -97,7 +97,12 @@ body {
                         font-weight: bolder;
                         font-size: 20px;
                         left: -30px;
-                        top: 2%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
                     }
                     &:nth-child(2)::before {
                         content: "";
@@ -124,7 +129,12 @@ body {
                         font-weight: bolder;
                         font-size: 20px;
                         right: -30px;
-                        top: 9%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
                     }
                     @media (max-width: 767px){
                         &:last-child::before{
