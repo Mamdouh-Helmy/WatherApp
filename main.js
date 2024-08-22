@@ -17,16 +17,13 @@ async function getWeather(forecastUrl, dayIndex = 0) {
             "July", "August", "September", "October", "November", "December"
         ];
         let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        
-        setTimeout(() => {
-            date = new Date(localtime);
-            day = date.getDate();
-            month = months[date.getMonth()]; 
-            year = date.getFullYear();
-            dayName = days[date.getDay()];
-            document.querySelector('.spans .his').innerText = `${month} ${day}, ${year}`;
-            document.querySelector('.the-day').innerText = dayName;
-        }, 1000);
+        date = new Date(localtime);
+        day = date.getDate();
+        month = months[date.getMonth()]; 
+        year = date.getFullYear();
+        dayName = days[date.getDay()];
+        document.querySelector('.spans .his').innerText = `${month} ${day}, ${year}`;
+        document.querySelector('.the-day').innerText = dayName;
         document.querySelector('.situation').innerText = forecastData.current.condition.text;
         
         let all_day = document.querySelector('.all-day');
